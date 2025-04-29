@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="/Trabajo/resources/logo.png"
+        width="5%"
+        alt="Logo de la plataforma; una figura que simula ser un changuito de compras con una 'e' arriba" />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Productos</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Nosotros</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <form action="https://formspree.io/f/mpwdqlqa" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" required />
+        <label for="email">Email</label>
+        <input type="email" />
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <main>
+      <section>
+        <video controls width="50%" muted>
+          <source src="/Trabajo/resources/video.mp4" type="video/mp4" />
+          <track src="/Trabajo/resources/videoSubtitulo.vtt" srclang="es" label="Español" />
+        </video>
+      </section>
+      <section>
+        <img
+          src="/Trabajo/resources/imagenSlogan.png"
+          width="20%"
+          alt="Imagen con slogan de la plataforma; 'Todo lo que buscas, lo encontrás aquí'" />
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
