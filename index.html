@@ -9,9 +9,12 @@
   <body>
     <header>
       <img
-        src="/resources/logo.png"
-        width="5%"
+        src="/images/logo.png"
+        width="10%"
         alt="Logo de la plataforma; una figura que simula ser un changuito de compras con una 'e' arriba" />
+      <div>
+        <h1>Título de página</h1>
+      </div>
     </header>
 
     <nav>
@@ -26,12 +29,24 @@
 
     <div>
       <form action="https://formspree.io/f/mpwdqlqa" method="POST">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" required />
-        <label for="email">Email</label>
-        <input type="email" />
-        <label for="mensaje">Mensaje</label>
-        <textarea name="mensaje" id="mensaje" rows="4" cols="50" required></textarea>
+        <label>
+          Nombre
+          <input type="text" name="name" placeholder="Ingrese su nombre" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="mail" placeholder="Ingrese un Email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            cols="50"
+            placeholder="Ingrese un mensaje"
+            required></textarea>
+        </label>
         <button type="submit">Enviar</button>
       </form>
     </div>
@@ -39,13 +54,14 @@
     <main>
       <section>
         <video controls width="50%" muted>
-          <source src="/resources/video.mp4" type="video/mp4" />
-          <track src="/resources/videoSubtitulo.vtt" srclang="es" label="Español" />
+          <source src="/videos/advertisingPhone.mp4" type="video/mp4" />
+          <track src="/subtitles/subtitlesSpa.vtt" srclang="es" label="Español" />
+          <track src="/subtitles/subtitlesEng.vtt" srclang="en" label="Inglés" />
         </video>
       </section>
       <section>
         <img
-          src="/resources/imagenSlogan.png"
+          src="/images/imageSlogan.png"
           width="20%"
           alt="Imagen con slogan de la plataforma; 'Todo lo que buscas, lo encontrás aquí'" />
       </section>
