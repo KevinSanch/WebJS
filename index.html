@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechnoBu</title>
+    <!--CSS-->
     <link rel="stylesheet" href="/css/index.css" />
+    <!--Font Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
 
   <body>
@@ -33,13 +39,21 @@
       <div class="formLabel">
         <label>
           Nombre
-          <input type="text" name="name" placeholder="Ingrese su nombre" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Ingrese su nombre"
+            required />
         </label>
       </div>
       <div class="formLabel">
         <label>
           Email
-          <input type="email" name="mail" placeholder="Ingrese un Email" required />
+          <input
+            type="email"
+            name="mail"
+            placeholder="Ingrese su Email"
+            required />
         </label>
       </div>
       <div class="formLabel">
@@ -54,7 +68,7 @@
             required></textarea>
         </label>
       </div>
-      <div id="formButton">   
+      <div id="formButton">
         <button type="submit">Enviar</button>
       </div>
     </form>
@@ -63,8 +77,14 @@
       <section>
         <video controls muted id="videoAd">
           <source src="/videos/advertisingPhone.mp4" type="video/mp4" />
-          <track src="/subtitles/subtitlesSpa.vtt" srclang="es" label="Español" />
-          <track src="/subtitles/subtitlesEng.vtt" srclang="en" label="Inglés" />
+          <track
+            src="/subtitles/subtitlesSpa.vtt"
+            srclang="es"
+            label="Español" />
+          <track
+            src="/subtitles/subtitlesEng.vtt"
+            srclang="en"
+            label="Inglés" />
         </video>
       </section>
     </main>
@@ -74,6 +94,12 @@
         id="imageFooter"
         src="/images/footer.png"
         alt="Imagen del pie de página; ilustra un buho sobrevolando una ciudad con simbolos tecnologicos" />
+      <div class="socialIcons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
     </footer>
   </body>
 </html>
