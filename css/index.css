@@ -26,14 +26,13 @@ header {
 }
 
 main {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     padding: 2rem;
     background-color: #a5b5c7;
 }
 
 section {
-    display: inline-flex;
     margin-bottom: 1rem;
     padding: 2rem;
     background-color: #dfdfdf;
