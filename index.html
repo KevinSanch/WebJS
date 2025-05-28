@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechnoBu</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="/css/index.css" />
     <!--Font Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +14,8 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
 
   <body>
@@ -35,46 +35,48 @@
       </nav>
     </header>
 
-    <form action="https://formspree.io/f/mpwdqlqa" method="POST">
-      <div class="formLabel">
-        <label>
-          Nombre
-          <input
-            type="text"
-            name="name"
-            placeholder="Ingrese su nombre"
-            required />
-        </label>
-      </div>
-      <div class="formLabel">
-        <label>
-          Email
-          <input
-            type="email"
-            name="mail"
-            placeholder="Ingrese su Email"
-            required />
-        </label>
-      </div>
-      <div class="formLabel">
-        <label>
-          Mensaje
-          <textarea
-            name="message"
-            id="message"
-            rows="4"
-            cols="50"
-            placeholder="Ingrese un mensaje"
-            required></textarea>
-        </label>
-      </div>
-      <div id="formButton">
-        <button type="submit">Enviar</button>
-      </div>
-    </form>
-
     <main>
-      <section>
+      <section id="sectionLabel">
+        <form action="https://formspree.io/f/mpwdqlqa" method="POST">
+          <div class="formLabel">
+            <label>
+              Nombre
+              <input
+                type="text"
+                name="name"
+                placeholder="Ingrese su nombre"
+                required />
+            </label>
+          </div>
+          <div class="formLabel">
+            <label>
+              Email
+              <input
+                type="email"
+                name="mail"
+                placeholder="Ingrese su Email"
+                required />
+            </label>
+          </div>
+          <div class="formLabel">
+            <label>
+              Mensaje
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                cols="50"
+                placeholder="Ingrese un mensaje"
+                required></textarea>
+            </label>
+          </div>
+          <div id="formButton">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="sectionVideo">
         <video controls muted id="videoAd">
           <source src="/videos/advertisingPhone.mp4" type="video/mp4" />
           <track
