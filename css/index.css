@@ -137,14 +137,12 @@ textarea {
 }
 
 #sectionVideo {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 #videoAd {
-    display: block;
     width: 50%;
     height: auto;
 }
@@ -178,5 +176,4 @@ textarea {
     z-index: 1;
     margin-top: 1.5rem;
     width: 40%;
-}
 }
