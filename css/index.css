@@ -3,13 +3,18 @@ html {
     font-size: 18px;
 }
 
+body {
+    margin: 0;
+    background-color: #a5b5c7;
+}
+
 header,
 main,
 section,
 footer {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -21,14 +26,14 @@ header {
 }
 
 main {
-    position: relative;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #010d1b;
-    border-bottom: 2px solid #0098f7;
+    padding: 2rem;
+    background-color: #a5b5c7;
 }
 
 section {
+    margin-bottom: 1rem;
     padding: 2rem;
     background-color: #dfdfdf;
     border-radius: 1rem;
@@ -39,9 +44,9 @@ section {
 footer {
     position: relative;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
     background-color: #000d27;
+    border-top: 2px solid #0098f7;
+
 }
 
 nav {
