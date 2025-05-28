@@ -1,6 +1,7 @@
 html {
     font-family: Roboto, sans-serif;
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -66,7 +67,17 @@ textarea {
     margin-top: 0.3rem;
 }
 
-.formLabel {
+a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.sectionForm div {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
@@ -79,17 +90,13 @@ textarea {
     gap: 1.5rem;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .navNavegation li {
     margin-right: 1rem;
 }
 
-.navNavegation li a {
-    display: block;
-    font-weight: bold;
-    text-decoration: none;
+.navNavegation a {
     color: #2adcd2;
     transition: transform 0.3s, color 0.3s;
 }
@@ -107,31 +114,53 @@ textarea {
 .socialIcons {
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 2rem;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     gap: 0.5rem;
-    transform: translateY(-50%);
+    color: #0098f7;
+    transform: translateY(-40%);
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.socialIcons ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    margin: 0;
 }
 
 .socialIcons i {
     font-size: 1.3rem;
+}
+
+.socialIcons a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
     color: #2adcd2;
     transition: transform 0.3s, color 0.3s;
 }
 
-.socialIcons i:hover {
+.socialIcons a:hover {
     color: #0098f7;
     transform: scale(1.2);
 }
 
-.socialIcons i:active {
+.socialIcons a:active {
     color: #0069aa;
     transform: scale(1);
 }
 
-#sectionLabel {
+#sectionForm {
     width: 100%;
     max-width: 500px;
 }
