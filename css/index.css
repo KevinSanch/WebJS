@@ -77,14 +77,6 @@ ul {
     list-style: none;
 }
 
-.sectionForm div {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    max-width: 500px;
-}
-
-
 .navNavegation {
     display: flex;
     gap: 1.5rem;
@@ -110,6 +102,64 @@ ul {
     color: #0069aa;
     transform: scale(1);
 }
+
+.sectionForm div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    max-width: 500px;
+}
+
+.sectionVideo {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sectionForm {
+    width: 100%;
+    max-width: 500px;
+}
+
+.sectionProducts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.conteinerSectionProducts {
+    display: flex;
+    flex-direction: column;
+    max-width: 12rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+
+.imgSectionProducts {
+    padding: 1rem;
+    background-color: #0069aa;
+    border-radius: 1rem;
+}
+
+.imgSectionProducts img {
+    display: block;
+    max-width: 100%;
+}
+
+.textSectionProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+}
+
+.buttonSectionProducts {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
 
 .socialIcons {
     display: flex;
@@ -158,17 +208,6 @@ ul {
 .socialIcons a:active {
     color: #0069aa;
     transform: scale(1);
-}
-
-#sectionForm {
-    width: 100%;
-    max-width: 500px;
-}
-
-#sectionVideo {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 #videoAd {
