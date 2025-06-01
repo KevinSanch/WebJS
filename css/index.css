@@ -145,7 +145,7 @@ ul {
     row-gap: 2rem;
     column-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    place-items: center;
+    place-items: inherit;
     width: 100%;
 }
 
@@ -173,15 +173,131 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000000;
+    gap: 2rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.titleSectionProducts {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.priceSectionProducts {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .buttonSectionProducts {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
+    margin: auto;
+    padding-bottom: 1rem;
 }
 
+.buttonSectionProducts button {
+    padding: 0.5rem;
+    width: 10rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0098f7;
+    border: 2px solid #0098f7;
+    border-radius: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.buttonSectionProducts button:hover {
+    color: #0098f7;
+    background-color: white;
+    border: 2px solid #0098f7;
+}
+
+.buttonSectionProducts button:active {
+    color: white;
+    background-color: #0098f7;
+    border: 2px solid #0098f7;
+}
+
+.sectionReview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.conteinerCardSectionReview {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    place-items: inherit;
+    width: 100%;
+}
+
+.cardSectionReview {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+    transition: transform 0.3s;
+}
+
+.cardSectionReview:hover {
+    transform: translateY(-5%);
+}
+
+.imgSectionReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.imgSectionReview img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
+}
+
+.textSectionReview {
+    display: flex;
+    flex-direction: column;
+}
+
+.topTextSectionReview {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.topTextSectionReview div {
+    display: flex;
+    gap: 0.1rem;
+}
+
+.topTextSectionReview i {
+    font-size: 0.8rem;
+    color: #0069aa;
+}
+
+.topTextSectionReview span {
+    font-size: 0.6rem;
+    color: #818181;
+}
+
+.downTextSectionReview {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 0.85rem;
+    ;
+}
 
 .socialIcons {
     display: flex;
@@ -245,7 +361,7 @@ ul {
     color: white;
     background-color: #0098f7;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
