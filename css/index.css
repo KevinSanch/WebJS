@@ -1,3 +1,4 @@
+/*Estilos generales*/
 html {
     font-family: Roboto, sans-serif;
     font-size: 18px;
@@ -21,7 +22,11 @@ footer {
 }
 
 header {
+    position: fixed;
+    z-index: 1;
     justify-content: flex-start;
+    width: 100%;
+    height: 8rem;
     background-color: #010d1b;
     border-bottom: 2px solid #0098f7;
 }
@@ -30,6 +35,7 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
+    padding-top: 10rem;
     background-color: #a5b5c7;
 }
 
@@ -77,13 +83,7 @@ ul {
     list-style: none;
 }
 
-.titleSection {
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
+/*Barra de navegación*/
 .navNavegation {
     display: flex;
     gap: 1.5rem;
@@ -110,29 +110,22 @@ ul {
     transform: scale(1);
 }
 
+/*Títulos de secciones*/
+.titleSection {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/*Sección de video*/
 .sectionVideo {
     justify-content: center;
     align-items: center;
     width: fit-content;
 }
 
-.sectionForm {
-    width: 100%;
-    max-width: 500px;
-}
-
-.sectionForm form {
-    display: flex;
-    flex-direction: column;
-}
-
-.conteinerSectionForm div {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    max-width: 500px;
-}
-
+/*Sección de productos*/
 .sectionProducts {
     display: flex;
     flex-direction: column;
@@ -218,6 +211,7 @@ ul {
     border: 2px solid #0098f7;
 }
 
+/*Sección de reseñas*/
 .sectionReview {
     display: flex;
     flex-direction: column;
@@ -299,6 +293,7 @@ ul {
     ;
 }
 
+/*Sección de footer*/
 .socialIcons {
     display: flex;
     position: absolute;
@@ -348,20 +343,91 @@ ul {
     transform: scale(1);
 }
 
+/*Sección de formulario (contact.html)*/
+.sectionForm {
+    width: 100%;
+}
+
+.sectionForm form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topConteinerSectionForm {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.topConteinerSectionForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0rem 1rem 0rem 1rem;
+    width: 100%;
+}
+
+.topConteinerSectionForm div {
+    display: flex;
+    width: 50%;
+}
+
+.topConteinerSectionForm input {
+    height: 1.5rem;
+}
+
+.downConteinerSectionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.downConteinerSectionForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0rem 1rem 0rem 1rem;
+    width: 100%;
+}
+
+.downConteinerSectionForm div {
+    display: flex;
+}
+
+.downConteinerSectionForm textarea {
+    height: 6rem;
+    resize: none;
+}
+
+
+
+/*Anclas*/
+#home,
+#products {
+    position: relative;
+    top: -8rem;
+}
+
 #videoAd {
     width: 35rem;
     height: auto;
 }
 
+#formButton {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
 #formButton button {
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     color: white;
     background-color: #0098f7;
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     cursor: pointer;
 }
 

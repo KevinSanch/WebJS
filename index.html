@@ -26,16 +26,15 @@
         alt="Logo de la plataforma; un buho con un celular en su 'mano' con el nombre de la marca debajo" />
       <nav>
         <ul class="navNavegation">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#Products">Productos</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#products">Productos</a></li>
+          <li><a href="/contact.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <a id="home"></a>
       <section class="sectionVideo">
         <video controls muted id="videoAd">
           <source src="/videos/promoPhone.mp4" type="video/mp4" />
@@ -50,50 +49,8 @@
         </video>
       </section>
 
-      <section class="sectionForm">
-        <form action="https://formspree.io/f/mpwdqlqa" method="POST">
-          <span class="titleSection">Formulario</span>
-          <div class="conteinerSectionForm">
-            <div>
-              <label>
-                Nombre
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Ingrese su nombre"
-                  required />
-              </label>
-            </div>
-            <div>
-              <label>
-                Email
-                <input
-                  type="email"
-                  name="mail"
-                  placeholder="Ingrese su Email"
-                  required />
-              </label>
-            </div>
-            <div>
-              <label>
-                Mensaje
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="4"
-                  cols="50"
-                  placeholder="Ingrese un mensaje"
-                  required></textarea>
-              </label>
-            </div>
-            <div id="formButton">
-              <button type="submit">Enviar</button>
-            </div>
-          </div>
-        </form>
-      </section>
-
-      <section class="sectionProducts" id="Products">
+      <a id="products"></a>
+      <section class="sectionProducts">
         <span class="titleSection">Productos</span>
         <div class="conteinerCardSectionProducts">
           <div class="cardSectionProducts">
@@ -153,7 +110,9 @@
               <img src="/images/notebook1.webp" alt="Una notebook" />
             </div>
             <div class="textSectionProducts">
-              <span class="titleSectionProducts">Notebook Acer A314 36P 3772 I3 N305 128GB 8GB 14'</span>
+              <span class="titleSectionProducts">
+                Notebook Acer A314 36P 3772 I3 N305 128GB 8GB 14'
+              </span>
               <span class="priceSectionProducts">$529.480</span>
             </div>
             <div class="buttonSectionProducts">
@@ -166,7 +125,9 @@
               <img src="/images/notebook2.webp" alt="Una notebook" />
             </div>
             <div class="textSectionProducts">
-              <span class="titleSectionProducts">Notebook ASUS E410KA-PM464 N6000 4GB/64GB/14'</span>
+              <span class="titleSectionProducts">
+                Notebook ASUS E410KA-PM464 N6000 4GB/64GB/14'
+              </span>
               <span class="priceSectionProducts">$280.716</span>
             </div>
             <div class="buttonSectionProducts">
@@ -179,7 +140,9 @@
               <img src="/images/auricular1.webp" alt="Un auricular" />
             </div>
             <div class="textSectionProducts">
-              <span class="titleSectionProducts">Auricular JBL IN-EAR Bluetooth Tune 710BT</span>
+              <span class="titleSectionProducts">
+                Auricular JBL IN-EAR Bluetooth Tune 710BT
+              </span>
               <span class="priceSectionProducts">$91.423</span>
             </div>
             <div class="buttonSectionProducts">
@@ -192,7 +155,9 @@
               <img src="/images/auricular2.webp" alt="Un auricular" />
             </div>
             <div class="textSectionProducts">
-              <span class="titleSectionProducts">Auricular JBL Wave Beam 2 Bluetooth con Microfone</span>
+              <span class="titleSectionProducts">
+                Auricular JBL Wave Beam 2 Bluetooth con Microfone
+              </span>
               <span class="priceSectionProducts">$80.972</span>
             </div>
             <div class="buttonSectionProducts">

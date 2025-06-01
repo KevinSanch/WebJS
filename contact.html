@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechnoBu</title>
+    <!--Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="/images/logo.png"
+        alt="Logo de la plataforma; un buho con un celular en su 'mano' con el nombre de la marca debajo" />
+      <nav>
+        <ul class="navNavegation">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/index.html#products">Productos</a></li>
+          <li><a href="#home">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <a id="home"></a>
+      <section class="sectionForm">
+        <form action="https://formspree.io/f/mpwdqlqa" method="POST">
+          <span class="titleSection">Contacto</span>
+          <div class="topConteinerSectionForm">
+            <div>
+              <label>
+                <div class="titleFieldSectionForm">Nombre</div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ingrese su nombre"
+                  required />
+              </label>
+            </div>
+            <div>
+              <label>
+                <div class="titleFieldSectionForm">Email</div>
+                <input
+                  type="email"
+                  name="mail"
+                  placeholder="Ingrese su Email"
+                  required />
+              </label>
+            </div>
+          </div>
+          <div class="downConteinerSectionForm">
+            <div>
+              <label>
+                <div class="titleFieldSectionForm">Mensaje</div>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  cols="50"
+                  placeholder="Ingrese un mensaje"
+                  required></textarea>
+              </label>
+            </div>
+            <div id="formButton">
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        id="imageFooter"
+        src="/images/footer.png"
+        alt="Imagen del pie de página; ilustra un buho sobrevolando una ciudad con simbolos tecnologicos" />
+      <div class="socialIcons">
+        <h4>Seguinos en nuestras redes</h4>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="http://www.x.com" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+              X
+            </a>
+          </li>
+          <li>
+            <a href="http://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+              Youtube
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
