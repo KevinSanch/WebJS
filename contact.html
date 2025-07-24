@@ -41,26 +41,22 @@
           <div class="topConteinerSectionForm">
             <div>
               <label>
-                <div class="titleFieldSectionForm">Nombre</div>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Ingrese su nombre"
-                  required />
+                <div class="titleFieldSectionForm" id="nameForm">Nombre</div>
+                <input type="text" name="name" placeholder="Ingrese su nombre" /
+                required>
+                <span class="errorSectionForm" id="errorName"></span>
               </label>
             </div>
             <div>
               <label>
-                <div class="titleFieldSectionForm">Email</div>
-                <input
-                  type="email"
-                  name="mail"
-                  placeholder="Ingrese su Email"
-                  required />
+                <div class="titleFieldSectionForm" id="emailForm">Email</div>
+                <input type="email" name="mail" placeholder="Ingrese su Email" /
+                required>
+                <span class="errorSectionForm" id="errorEmail"></span>
               </label>
             </div>
           </div>
-          <div class="downConteinerSectionForm">
+          <div class="downConteinerSectionForm" id="messageForm">
             <div>
               <label>
                 <div class="titleFieldSectionForm">Mensaje</div>
@@ -71,6 +67,7 @@
                   cols="50"
                   placeholder="Ingrese un mensaje"
                   required></textarea>
+                <span class="errorSectionForm" id="errorMessage"></span>
               </label>
             </div>
             <div id="formButton">
